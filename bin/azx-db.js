@@ -12,20 +12,11 @@ if (settings.appService && !settings.database) {
     )
     .action(async function (engine) {
 
-      if(engine === "mongo"){
-
-        try {
-          await CosmosScript.createService(settings)
-          consola.success(`Your database was created. You can access it using 'db connect', which requires the MongoDB client to be installed.`)
-        } catch (err) {
-          consola.error(err.message);
-        }
-      }else{
-        try {
-          await PgMySQLScript.createService(settings, engine);
-        } catch (err) {
-          consola.error(err.message);
-        }
+      try{
+        if(engine === "mongo") await CosmosScript.createService(settings)
+        else await PgMySQLScript.createService(settings, engine);
+      }catch(err){
+        consola.error(err);
       }
       
     });
