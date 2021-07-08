@@ -36,6 +36,18 @@ A few things to note:
 
 The `.azure` directory is your door into Azure. Stepping in there will allow you to do all kinds of things, which we’ll see in a second.
 
+## A Note on Naming Things
+
+A major goal of mine with this project is to reduce the cognitive load required to get up and running on Azure. To that end, I wanted to reduce the need to name things. For instance, you can go "full Heroku" style with AZX and let it name your project for you (`quiet-dust-16` is the project name below). Everything you create, from that point on, will use this as the basis of naming things.
+
+For instance:
+
+ - Your App Service plan will be called `quiet-dust-16-plan`
+ - Your Web App will be called `quiet-dust-16-app`
+ - You DB will be called `quiet-dust-16-db`
+
+You might have other naming needs, and if so, let me know. For now, enjoy the ride...
+
 ## Creating a Web App
 
 Now that we’ve initialized the project, we can do some new things. What things? You can ask AZX:
