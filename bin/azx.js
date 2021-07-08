@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
 const program = require("commander");
-const consola = require("consola");
 const NameGen = require("../lib/util/name_gen");
 const Settings = require("../lib/settings");
 const { AppScript } = require("../lib/scripts");

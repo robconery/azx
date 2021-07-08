@@ -29,7 +29,15 @@ if (!settings.appService) {
     });
 } else {
   program
-    .command("settings")
+    .command("write_settings")
+    .description("Update your web app's config settings from your local .env (in the .azure directory)")
+    .action(async function () {
+      consola.info("Sending your .azure/.env settings to Azure...");
+      const res = await AppScript.updateAppSettings(settings);
+      consola.success("Done!")
+    });
+  program
+    .command("get_settings")
     .description("View your application's settings on Azure")
     .action(async function () {
       consola.info("Pulling settings from Azure...");
