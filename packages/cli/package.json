@@ -1,0 +1,19 @@
+{
+  "name": "@robconery/azx-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "azx.js",
+  "bin": {
+    "azx": "./azx.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^8.0.0",
+    "consola": "^2.15.3"
+  }
+}
