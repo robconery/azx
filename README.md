@@ -7,11 +7,11 @@ AZX can do a whole lot more. Let’s see.
 
 This is a CLI project and is designed to be installed globally:
 
-    npm install -g azure-project
+    npm install -g @robconery/azx
 
 This will add `azx` to your PATH. If you want, you can install wherever you like (even inside your project) and work with the CLI by using an alias:
 
-    alias azx="node ./node_modules/azure-project/bin/azx.js"
+    alias azx="node ./node_modules/azx/packages/cli/azx.js"
 
 Both ways will operate the same.
 
