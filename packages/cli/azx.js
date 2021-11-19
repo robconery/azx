@@ -50,8 +50,8 @@ if (!settings) {
     .description(
       "Creates an Azure Project in this directory"
     )
-    .action(async function (command) {
-      const options = command.opts();
+    .action(async function (options) {
+      //const options = command.opts();
       //Commander has a weird bug where an option named "name" needs to be called as a function
       await AppScript.init({location: options.location, name: options.project});
 
