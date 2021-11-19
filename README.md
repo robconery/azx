@@ -1,4 +1,5 @@
 # Azure Project: Making WebApps on Azure a Little Easier
+
 AZX is a little wrapper for the Azure CLI that allows you to work with Azure in a "local project" sense. You generate some settings and secrets in a local directory and scripts are built on top of it. 
 The goal is to bring Azure into your project, offering storage of simple settings and secrets locally. In the past, there were upwards of 20 separate commands that you needed to use with the Azure CLI just to get a web app up and running (or 30-ish clicks in the portal). Yes, there’s `az webapp up` but that simply zips up your local project. 
 AZX can do a whole lot more. Let’s see.
@@ -11,7 +12,7 @@ This is a CLI project and is designed to be installed globally:
 
 This will add `azx` to your PATH. If you want, you can install wherever you like (even inside your project) and work with the CLI by using an alias:
 
-    alias azx="node ./node_modules/azx/packages/cli/azx.js"
+    alias azx="node ./node_modules/azx/bin/azx.js"
 
 Both ways will operate the same.
 
