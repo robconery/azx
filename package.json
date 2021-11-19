@@ -1,15 +1,26 @@
 {
   "name": "@robconery/azx",
-  "workspaces": [
-    "./packages/*"
-  ],
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "A helper library that wraps the Azure CLI, providing a localized experience",
-  "main": "./packages/cli/azx.js",
+  "main": "./bin/azx.js",
   "bin": {
-    "azx": "./packages/cli/azx.js"
+    "azx": "./bin/azx.js"
+  },
+  "scripts" : {
+    "test" : "mocha --recursive"
   },
   "keywords": [],
   "author": "Rob Conery",
-  "license": "ISC"
+  "dependencies": {
+    "commander": "^8.0.0",
+    "consola": "^2.15.3",
+    "uuid": "^8.3.2",
+    "inquirer": "^8.1.1",
+    "axios": "^0.21.1",
+    "dotenv": "^10.0.0"
+  },
+  "devDependencies": {
+    "mocha": "^9.0.2"
+  }
+
 }

@@ -1,5 +1,5 @@
 const assert = require("assert");
-const {PgMySQL} = require("../index");
+const {PgMySQL} = require("../lib/commands/");
 
 describe('PG/MySQL commands', () => {
   const settings = {

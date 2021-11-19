@@ -1,5 +1,5 @@
 const assert = require("assert");
-const {Resources} = require("../index");
+const {Resources} = require("../lib/commands/");
 
 describe('Resource commands', () => {
   it("includes app config", () => {

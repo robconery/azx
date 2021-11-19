@@ -1,6 +1,6 @@
 const { program } = require('commander')
-const Runner = require("@robconery/azx-runner");
-const {AppSkus, DbSkus} = require("@robconery/azx-commands");
+const Runner = require("../lib/runner");
+const {AppSkus, DbSkus} = require("../lib/commands");
 const consola = require("consola");
 
 program

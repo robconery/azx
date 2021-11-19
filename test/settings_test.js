@@ -1,4 +1,4 @@
-const Settings = require("../index");
+const Settings = require("../lib/settings");
 const _ = require("lodash");
 const assert = require("assert");
 

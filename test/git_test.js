@@ -1,5 +1,5 @@
 const assert = require("assert");
-const {Git} = require("../index");
+const {Git} = require("../lib/commands/");
 
 describe('Git commands', () => {
   const settings = {

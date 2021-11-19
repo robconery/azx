@@ -1,8 +1,8 @@
 //this runs live against Azure, so use with caution... 
 //run this from the test directory as that's where the .azure folder will be created
-const { AppScript, PgMySQLScript, CosmosScript } = require("../packages/scripts");
-const Settings = require("../packages/settings");
-const Runner = require("../packages/runner");
+const { AppScript, PgMySQLScript, CosmosScript } = require("../lib/scripts");
+const Settings = require(".../lib/settings");
+const Runner = require("../lib/runner");
 
 const go = async function(){
   let settings = {}

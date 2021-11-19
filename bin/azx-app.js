@@ -1,7 +1,7 @@
 const { program } = require('commander')
-const Settings = require("@robconery/azx-settings");
-const Runner = require("@robconery/azx-runner");
-const {AppScript} = require("@robconery/azx-scripts");
+const Settings = require("../lib/settings");
+const Runner = require("../lib/runner");
+const {AppScript} = require("../lib/scripts");
 
 let settings = Settings.get();
 

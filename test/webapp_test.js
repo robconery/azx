@@ -1,5 +1,5 @@
 const assert = require("assert");
-const {WebApps} = require("../index");
+const {WebApps} = require("../lib/commands/");
 
 describe('WebApp Commands', () => {
   const settings = {

@@ -1,1 +1,0 @@
-This space reserved for Mr. Shaw

@@ -1,5 +1,5 @@
 const assert = require("assert");
-const {Cosmos} = require("../index");
+const {Cosmos} = require("../lib/commands/");
 
 describe('Cosmos DB commands', () => {
   const settings = {

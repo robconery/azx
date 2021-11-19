@@ -1,5 +1,5 @@
 const assert = require("assert");
-const {AppService} = require("../index");
+const {AppService} = require("../lib/commands/");
 
 describe('App Service commands', () => {
   it("creates plans", () => {

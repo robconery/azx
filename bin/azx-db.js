@@ -1,6 +1,6 @@
 const { program } = require('commander')
-const Settings = require("@robconery/azx-settings");
-const {PgMySQLScript, CosmosScript} = require("@robconery/azx-scripts");
+const Settings = require("../lib/settings");
+const {PgMySQLScript, CosmosScript} = require("../lib/scripts");
 
 let settings = Settings.get();
 

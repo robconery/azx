@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
 const program = require("commander");
-const Settings = require("@robconery/azx-settings");
-const { AppScript } = require("@robconery/azx-scripts");
+const Settings = require("../lib/settings");
+const { AppScript } = require("../lib/scripts");
 
 let settings = Settings.get();
 
