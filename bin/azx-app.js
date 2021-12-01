@@ -16,9 +16,8 @@ if (!settings.appService) {
       if (runtime === "python") runtime = "PYTHON|3.8";
       if (runtime === "ruby") runtime = "PYTHON|3.8";
       if (runtime === "dotnet") runtime = "DOTNETCORE|3.1";
-      if (runtime === "node") runtime = "NODE|10.14";
+      if (runtime === "node") runtime = "NODE|14-lts";
   
-
       try {
         AppScript.createWebApp(settings, runtime);
 
